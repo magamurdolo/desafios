@@ -11,6 +11,35 @@
     background-color: rgb(202, 241, 203);
 }
 
+/* NavBar */
+
+.colorNavBar{
+    background-color: rgb(81, 226, 79);
+}
+
+.navbar-brand {
+    color: green;
+    font-weight: bold;
+    font-style: italic;
+    font-size: 45px;
+}
+
+.navbar-brand img {
+    animation-name: girando;
+    animation-duration: 1.5s;
+}
+
+.nav-link.active {
+    color: green;
+}
+
+.nav-link {
+    text-align: center;
+}
+
+.dropdown-menu {
+--bs-dropdown-bg: #acdca5;}
+
 /* Grid */
 
 .container {
@@ -21,12 +50,14 @@
         "text text img img"
         "form form form form"
         "footer footer footer footer";
+    justify-items: center;
 }
 
 /* Header */
 
 .header {
     grid-area: header;
+    margin-bottom: 15px;
 }
 
 .headerColor {
@@ -44,10 +75,6 @@
     height: 150px;
 }
 
-h1 a img {
-    animation-name: girando;
-    animation-duration: 1.5s;
-}
 
 .nav {
     margin-bottom: 25px;
@@ -293,8 +320,8 @@ footer ol {
         grid-area: header;
     }
 
-    .titleStyle {
-        font-size: 45px;
+    .navbar-brand {
+        font-size: 40px;
     }
 
     .size-logo {
