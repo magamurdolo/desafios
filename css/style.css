@@ -52,6 +52,13 @@
         "form form form form"
         "footer footer footer footer";
     justify-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.containerIndex {
+    display: flex;
+    justify-content: center;
 }
 
 /* Header */
@@ -111,7 +118,7 @@ ul li a:hover {
 .text {
     grid-area: text;
     display: flex;
-    justify-content: end;
+    align-items: center;
 }
 
 .font {
@@ -126,6 +133,10 @@ ul li a:hover {
     text-align: center;
     padding: 20px;
     margin-right: 10px;
+}
+
+article h2 {
+    color: green;
 }
 
 article p {
@@ -238,6 +249,33 @@ footer ol {
     filter: blur(5px);
 }
 
+.carousel-inner {
+    width: 50%;
+    margin: 0 auto;
+}
+
+/* Grid tipos de té */
+
+.styleTiposdeTe {
+    border: solid black 3px;
+    padding: 0 12px;
+    width: 667px;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    margin-bottom: 15px;
+    margin-top: 15px;
+    text-align: center;
+}
+
+.colorDark {
+    background-color: rgb(56, 172, 60);
+}
+
+.colorLight {
+    background-color: rgb(127, 223, 131);
+}
+
 /* GIFT CARDS */
 
 /* Texto */
@@ -279,6 +317,12 @@ footer ol {
     justify-content: center;
 }
 
+.styleForm {
+    border-radius: 15px;
+    margin-top: 15px;
+    text-align: center;
+}
+
 .formGiftCards {
     display: flex;
     flex-direction: column;
@@ -300,6 +344,13 @@ footer ol {
 
 .mainContacto {
     text-align: center;
+    color: #245611;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 18px;
+}
+
+.styleFormContacto {
+    border-radius: 15px;
 }
 
 @keyframes girando {
