@@ -68,9 +68,9 @@
     margin-bottom: 15px;
 }
 
-.headerColor {
+/* .headerColor {
     background-color: rgb(81, 226, 79);
-}
+} */
 
 .titleStyle {
     color: green;
@@ -83,11 +83,11 @@
     height: 150px;
 }
 
-.nav {
+/* .nav {
     margin-bottom: 25px;
-}
+} */
 
-.nav-align {
+/* .nav-align {
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
@@ -111,7 +111,7 @@
 ul li a:hover {
     color: black;
     font-weight: bolder;
-}
+} */
 
 /* Text */
 
