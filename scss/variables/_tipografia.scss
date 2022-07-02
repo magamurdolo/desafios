@@ -1,0 +1,17 @@
+%font {
+        font-family: 'Quicksand', sans-serif;
+        display: flex;
+        align-items: center;
+}
+
+$colorPrincipal: green;
+$negrita: bold;
+$italica: italic;
+$tamaño: 45px;
+
+@mixin estiloFuente ($colorPrincipal, $negrita, $italica, $tamaño) {
+    color: $colorPrincipal;
+    font-weight: $negrita;
+    font-style: $italica;
+    font-size: $tamaño;
+}

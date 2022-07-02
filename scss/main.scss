@@ -1,0 +1,22 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+
+
+@import './variables/animaciones';
+@import './variables/tipografia';
+@import './variables/colores';
+@import './index';
+@import './blends';
+@import './packs';
+@import './gift-cards';
+@import './gift-cards';
+@import './envios';
+@import './contacto';
+@import './mediaqueries';
+
+
+  .bodyColor {
+    background-color: rgb(202, 241, 203);
+  }

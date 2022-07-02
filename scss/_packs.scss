@@ -1,0 +1,17 @@
+.mainGiftCards {
+    text-align: center;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: center;
+
+    .styleGC {
+        background-color: $color6;
+        max-width: 550px;
+        border-radius: 35px;
+        color: $color7;
+
+        .fontGiftCards {
+            font-family: 'Quicksand', sans-serif;
+        }
+    }
+}

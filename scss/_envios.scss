@@ -1,0 +1,21 @@
+.container {
+
+    .mainEnvios {
+        display: flex;
+        flex-direction: column;
+        width: 500px;
+        text-align: center;
+        margin: 15px auto;
+    }
+
+    .styleGC {
+        background-color: $color6;
+        max-width: 550px;
+        border-radius: 35px;
+        color: $color7;
+
+        .fontGiftCards {
+            font-family: 'Quicksand', sans-serif;
+        }
+    }
+}
