@@ -3,19 +3,23 @@
     // Index
     .container {
         display: grid;
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr;
         grid-template-areas:
-            "header header"
-            "text text"
-            "img img"
-            "form form"
-            "footer footer";
+            "header"
+            "text"
+            "img"
+            "form"
+            "footer";
 
         .header {
             grid-area: header;
+            width: 100vw;
 
-            .colorNavBar .font .navbar-brand .size-logo {
-                height: 110px;
+            .colorNavBar .font .navbar-brand {
+                font-size: 20px;
+                .size-logo{
+                    height: 82px;
+                }
             }
         }
 
@@ -42,17 +46,14 @@
 
         .footer {
             grid-area: footer;
+            width: 100vw;
         }
     }
 
     // Blends
 
-    article .styleTiposdeTe section {
-        width: auto;
-
-        .row {
-            width: 471px;
-        }
+    .container .styleTiposdeTe {
+        width: 430px;
     }
      // Gift Cards
 
@@ -60,5 +61,10 @@
             display: flex;
             flex-direction: column;
             margin-bottom: 10px;
+        }
+
+        //Envíos
+        .container .styleGC {
+            width: 340px;
         }
 }

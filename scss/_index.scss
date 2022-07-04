@@ -20,6 +20,7 @@
 
         .colorNavBar {
             background-color: $color1;
+            width: 100vw;
 
             .font {
                 @extend %font;
@@ -77,6 +78,7 @@
                     text-align: center;
                     padding: 20px;
                     margin-right: 10px;
+                    border-radius: 15px;
 
                     h2 {
                         color: green;

@@ -25,7 +25,8 @@
     grid-area: header;
     margin-bottom: 15px; }
     .container .header .colorNavBar {
-      background-color: #51e24f; }
+      background-color: #51e24f;
+      width: 100vw; }
       .container .header .colorNavBar .font .navbar-brand {
         color: green;
         font-weight: bold;
@@ -59,7 +60,8 @@
         max-width: 400px;
         text-align: center;
         padding: 20px;
-        margin-right: 10px; }
+        margin-right: 10px;
+        border-radius: 15px; }
         .container .containerIndex .text .font .backgroundColorMain h2 {
           color: green; }
         .container .containerIndex .text .font .backgroundColorMain p {
@@ -244,12 +246,15 @@
 @media (max-width: 767px) {
   .container {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-areas: "header header" "text text" "img img" "form form" "footer footer"; }
+    grid-template-columns: 1fr;
+    grid-template-areas: "header" "text" "img" "form" "footer"; }
     .container .header {
-      grid-area: header; }
-      .container .header .colorNavBar .font .navbar-brand .size-logo {
-        height: 110px; }
+      grid-area: header;
+      width: 100vw; }
+      .container .header .colorNavBar .font .navbar-brand {
+        font-size: 20px; }
+        .container .header .colorNavBar .font .navbar-brand .size-logo {
+          height: 82px; }
     .container .containerIndex {
       display: flex;
       flex-direction: column;
@@ -264,15 +269,16 @@
     .container .form {
       grid-area: form; }
     .container .footer {
-      grid-area: footer; }
-  article .styleTiposdeTe section {
-    width: auto; }
-    article .styleTiposdeTe section .row {
-      width: 471px; }
+      grid-area: footer;
+      width: 100vw; }
+  .container .styleTiposdeTe {
+    width: 430px; }
   .imagenTeGC img {
     display: flex;
     flex-direction: column;
-    margin-bottom: 10px; } }
+    margin-bottom: 10px; }
+  .container .styleGC {
+    width: 340px; } }
 
 .bodyColor {
   background-color: #caf1cb; }
