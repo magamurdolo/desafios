@@ -1,54 +1,64 @@
 @media (max-width:767px) {
+
+    // Index
     .container {
         display: grid;
         grid-template-columns: 1fr 1fr;
-        /* grid-template-rows: 1fr 1fr 1fr 1fr 1fr; */
         grid-template-areas:
             "header header"
             "text text"
             "img img"
             "form form"
             "footer footer";
+
+        .header {
+            grid-area: header;
+
+            .colorNavBar .font .navbar-brand .size-logo {
+                height: 110px;
+            }
+        }
+
+        .containerIndex {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+
+            .text {
+                grid-area: text;
+                justify-content: center;
+            }
+
+            .img {
+                grid-area: img;
+                text-align: center;
+                margin-top: 25px;
+            }
+        }
+
+        .form {
+            grid-area: form;
+        }
+
+        .footer {
+            grid-area: footer;
+        }
     }
 
-    .header {
-        grid-area: header;
-    }
+    // Blends
 
-    .navbar-brand {
-        font-size: 40px;
-    }
+    article .styleTiposdeTe section {
+        width: auto;
 
-    .size-logo {
-        height: 130px;
+        .row {
+            width: 471px;
+        }
     }
+     // Gift Cards
 
-    .list-items {
-        font-size: 15px;
-    }
-
-    .text {
-        grid-area: text;
-        justify-content: center;
-    }
-
-    .img {
-        grid-area: img;
-        text-align: center;
-        margin-top: 25px;
-    }
-
-    .form {
-        grid-area: form;
-    }
-
-    .footer {
-        grid-area: footer;
-    }
-
-    .imagenTeGC img {
-        display: flex;
-        flex-direction: column;
-        margin-bottom: 10px;
-    }
+        .imagenTeGC img {
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+        }
 }
