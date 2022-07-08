@@ -1,17 +1,32 @@
-.mainGiftCards {
-    text-align: center;
-    margin-bottom: 30px;
-    display: flex;
-    justify-content: center;
+.alturaMainPacks {
+    height: 645px;
 
-    .styleGC {
-        background-color: $color6;
-        max-width: 550px;
-        border-radius: 35px;
-        color: $color7;
+    .mainGiftCards {
+        text-align: center;
+        margin-bottom: 30px;
+        display: flex;
+        justify-content: center;
 
-        .fontGiftCards {
-            font-family: 'Quicksand', sans-serif;
+        .styleGC {
+            background-color: $color6;
+            max-width: 550px;
+            border-radius: 35px;
+            color: $color7;
+
+            .fontGiftCards {
+                font-family: 'Quicksand', sans-serif;
+            }
+        }
+    }
+
+    .imagenTe {
+        justify-content: center;
+        display: flex;
+
+        img {
+            max-width: 350px;
+            border: 3px solid black;
+            justify-content: center;
         }
     }
 }

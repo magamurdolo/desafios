@@ -3,14 +3,29 @@
     color: $color8;
     font-family: 'Quicksand', sans-serif;
     font-size: 18px;
+    height: 652px;
 
     form input {
         text-align: center;
         border-radius: 15px;
+
+        &:focus {
+            background-color: $color9;
+        }
     }
 
     .styleFormContacto {
         border-radius: 15px;
+
+        &:focus {
+            background-color: $color9;
+        }
+    }
+
+    textarea {
+        &:focus {
+            background-color: $color9;
+        }
     }
 
     input {
@@ -19,6 +34,10 @@
         margin: 2px;
         text-align: center;
         width: 200px;
+
+        &:focus {
+            background-color: $color9;
+        }
 
         &[type=submit]:hover {
             background-color: green;

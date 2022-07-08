@@ -1,5 +1,21 @@
 .container {
 
+    .mainGiftCards{
+        text-align: center;
+        margin-bottom: 30px;
+        display: flex;
+        justify-content: center;
+        .styleGC{
+            background-color: $color6;
+            max-width: 550px;
+            border-radius: 35px;
+            color: $color7;
+            .fontGiftCards{
+                font-family: 'Quicksand', sans-serif;
+            }
+        }
+    }
+
     .imgGiftCards {
         display: flex;
         justify-content: center;
@@ -32,6 +48,10 @@
                 margin: 2px;
                 text-align: center;
                 width: 200px;
+
+                &:focus {
+                    background-color: $color9;
+                }
         
                 &[type=submit]:hover {
                     background-color: green;

@@ -58,78 +58,88 @@
         }
     }
 
-    //text-img
 
-    .containerIndex {
-        display: flex;
-        justify-content: center;
+    .alturaMain {
+        height: 560px;
 
-        .text {
-            grid-area: text;
+        //text-img
+
+        .containerIndex {
             display: flex;
-            align-items: center;
+            justify-content: center;
 
-            .font {
-                @extend %font;
+            .text {
+                grid-area: text;
+                display: flex;
+                align-items: center;
 
-                .backgroundColorMain {
-                    background-color: $color6;
-                    max-width: 400px;
-                    text-align: center;
-                    padding: 20px;
-                    margin-right: 10px;
-                    border-radius: 15px;
+                .font {
+                    @extend %font;
 
-                    h2 {
-                        color: green;
+                    .backgroundColorMain {
+                        background-color: $color6;
+                        max-width: 400px;
+                        text-align: center;
+                        padding: 20px;
+                        margin-right: 10px;
+                        border-radius: 15px;
+
+                        h2 {
+                            color: green;
+                        }
+
+                        p {
+                            color: $color2;
+                        }
                     }
+                }
+            }
 
-                    p {
-                        color: $color2;
-                    }
+            .img {
+                grid-area: img;
+
+                .imagenTe img {
+                    max-width: 350px;
+                    border: 3px solid black;
                 }
             }
         }
 
-        .img {
-            grid-area: img;
 
-            .imagenTe img {
-                max-width: 350px;
-                border: 3px solid black;
-            }
+        //form
+
+        .form {
+            grid-area: form;
+            margin-top: 25px;
         }
-    }
 
-    //form
+        .centrar {
+            text-align: center;
+            color: green;
 
-    .form {
-        grid-area: form;
-        margin-top: 25px;
-    }
+            .formDesign {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                margin-bottom: 25px;
 
-    .centrar {
-        text-align: center;
-        color: green;
+                input {
+                    height: 30px;
+                    border-radius: 15px;
+                    margin: 2px;
+                    text-align: center;
+                    width: 200px;
 
-        .formDesign {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            margin-bottom: 25px;
+                    &:focus {
+                        background-color: $color9;
+                    }
 
-            input {
-                height: 30px;
-                border-radius: 15px;
-                margin: 2px;
-                text-align: center;
-                width: 200px;
-
-                &[type=submit]:hover {
-                    background-color: green;
-                    color: white;
-                    transform: scale(1.2);
-                    transition: 1.1s;
+                    &[type=submit]:hover {
+                        background-color: green;
+                        color: white;
+                        transform: scale(1.2);
+                        transition: 1.1s;
+                    }
                 }
             }
         }

@@ -17,31 +17,36 @@
 
             .colorNavBar .font .navbar-brand {
                 font-size: 20px;
-                .size-logo{
+
+                .size-logo {
                     height: 82px;
                 }
             }
         }
 
-        .containerIndex {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
+        .alturaMain {
+            height: 855px;
 
-            .text {
-                grid-area: text;
+            .containerIndex {
+                display: flex;
+                flex-direction: column;
                 justify-content: center;
+
+                .text {
+                    grid-area: text;
+                    justify-content: center;
+                }
+
+                .img {
+                    grid-area: img;
+                    text-align: center;
+                    margin-top: 25px;
+                }
             }
 
-            .img {
-                grid-area: img;
-                text-align: center;
-                margin-top: 25px;
+            .form {
+                grid-area: form;
             }
-        }
-
-        .form {
-            grid-area: form;
         }
 
         .footer {
@@ -55,16 +60,33 @@
     .container .styleTiposdeTe {
         width: 430px;
     }
-     // Gift Cards
 
-        .imagenTeGC img {
-            display: flex;
-            flex-direction: column;
-            margin-bottom: 10px;
-        }
+    //Packs
 
-        //Envíos
-        .container .styleGC {
-            width: 340px;
+    .alturaMainPacks {
+        height: 712px;
+    }
+
+    // Gift Cards
+
+    .imagenTeGC img {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 10px;
+    }
+
+    //Envíos
+    .container {
+        .alturaMainEnvios {
+            height: 525px;
+
+            .styleGC {
+                width: 340px;
+
+                .list-style {
+                    list-style: none;
+                }
+            }
         }
+    }
 }
